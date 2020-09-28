@@ -7,7 +7,7 @@ export default function home() {
     return (
         <div>
            <Navbar />
-           <MainBanner />
+          
         </div>
     )
 }
