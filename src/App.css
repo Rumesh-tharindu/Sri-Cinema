@@ -335,10 +335,13 @@ text-align: center;
 }
 .signup-form input{
   border-radius: 0;
+  background-color:rgb(29 38 54);
+  border:none;
 }
 .signup-form button{
   border-radius: 0;
-  background-color:#3b5998;
+  background-color:rgb(15 23 36);
+  border:none;
   color:#fff;
 }
 .signup-form h3{

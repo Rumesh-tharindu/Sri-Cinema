@@ -9,7 +9,7 @@ function Navbar() {
     <span class="navbar-toggler-icon fa fa-bars"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav  ml-5">
+    <ul class="navbar-nav mr-5">
       <li class="nav-item">
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
@@ -21,16 +21,19 @@ function Navbar() {
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Dramas</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">My Collection</a>
-      </li>
+      </li> 
     </ul>
+    <div className="search-bar">
+      <i className="fa fa-search"></i>
+     <form >
+       <input type="text" className="search" placeholder="search"/>
+     </form>
+    </div>
   </div>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav  ml-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="#"><i className="fa fa-search"></i></a>
+    <li class="nav-item">
+        <a class="nav-link" href="#">My Collection</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#"><i className="fa fa-shopping-cart"></i></a>
