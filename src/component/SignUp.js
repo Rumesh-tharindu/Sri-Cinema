@@ -1,21 +1,40 @@
-import React,{useRef} from 'react'
+import React,{useRef,useState} from 'react'
 import {useForm} from 'react-hook-form'
 import '../App.css'
+import axios from 'axios'
 
 function SignUp(props) {
    const {register,handleSubmit,errors,watch}=useForm()
+   const[message,showMessge]=useState('')
+   console.log(message)
    const password = useRef({});
     password.current = watch("password", "");
 
    const onSubmit=(data)=>{
-       console.log(data)
-     props.history.push('/home')
+       axios({
+           method:'post',
+           url:'http://localhost:5000/user/register',
+           data:data
+           
+       }).then(res=>{
+           if(!res.data.status){
+            showMessge(res.data.message)
+           }
+           else{
+            props.history.push('/home')
+           }
+           
+       })
+     
    }
     return (
         <div>
            <div className="container ">
                <form  className="signup-form mx-auto px-5 p-3 mt-4" onSubmit={handleSubmit(onSubmit)}>
                    <h3>SignUp for Sri Cinema</h3>
+                      <div className="message-body">
+                          <p className="message-text">{message}</p>
+                      </div>
                   <div className="form-group">
                       <label htmlFor="">Full name</label>
                       <input 
@@ -33,7 +52,21 @@ function SignUp(props) {
                   </div>
                   <div className="form-group">
                       <label htmlFor="">E-mail</label>
-                      <input defaultValue={props.location.state.email} type="text" name="" id="" className="form-control"/>
+                      <input
+                       defaultValue={props.location.state.email} 
+                       type="text"
+                        name="email"
+                        id="" 
+                       className="form-control"
+                       ref={register({
+                           required:'Enter email address',
+                           pattern:{
+                               value:/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
+                               message:"Enter correct email format"
+                           }
+                       })}
+                       />
+                       {errors.email && <span className="text-danger font-weight-bold">{errors.email.message}</span>}
                   </div>
                   <div className="form-group">
                       <label htmlFor="">Password</label>

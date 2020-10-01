@@ -351,6 +351,17 @@ text-align: center;
 .signup-form label{
   margin-bottom:0 ;
 }
+.signup-form .message-body{
+  width:100%;
+ 
+  text-align: center;
+  padding: 5px;
+}
+.signup-form .message-body .message-text{
+  color:rgb(230, 6, 6);
+  font-weight: 600;
+  margin:0;
+}
 
 .login-container .login-left h1,label{
  color:#fff;
