@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital@1&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -5,12 +7,14 @@
 
 nav{
     background-color:rgb(15 23 36);
+    border:1px solid rgb(15, 15, 15);
    
 }
 .navbar-light .navbar-nav .nav-link{
     color:#fff !important;
     transition: all .2s ease-in-out;
     font-size: 14px;
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 .navbar-light .navbar-nav .nav-link:hover{
     color:#fff;
@@ -43,6 +47,7 @@ nav{
    height: 40px;
    border: none;
    background-color: #1d2636 ;
+   font-family: 'IBM Plex Sans', sans-serif;
   
 }
 .navbar .collapse .search-bar i{
