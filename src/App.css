@@ -1,3 +1,8 @@
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap');
+
+
+
 *{
   margin: 0;
   padding: 0;
@@ -38,7 +43,7 @@ padding-top:20px;
   color:#fff;
   font-size: 30px;
   font-weight: bold;
-  font-family: 'Exo', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 .signLink{
   float: right;
@@ -79,9 +84,11 @@ padding-top:20px;
   color:#fff;
   text-align: center;
   line-height: 1.5;
-  font-family: 'Exo', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
+  text-transform: uppercase;
   font-weight: 700;
-  font-size: 50px;
+  font-size: 40px;
+  letter-spacing: 2px;
  
 }
 
@@ -90,7 +97,7 @@ padding-top:20px;
   width:500px;
   padding:10px;
   border:none;
-  font-family: 'Exo', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   background-color:#1d2636;
   color:#fff;
   font-weight: bold;
@@ -103,7 +110,7 @@ padding-top:20px;
   border:none;
   box-sizing: border-box;
   background-color:#0f1724;
-  font-family: 'Exo', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif !important;
   font-weight: 600;
   color:#fff;
 }
@@ -172,6 +179,7 @@ padding-top:20px;
 .footer p,h5,h6{
   color:#fff;
   font-weight: 500;
+  font-family:  'IBM Plex Sans', sans-serif;
 }
 .footer .social-icon span{
   background-color: #fff;

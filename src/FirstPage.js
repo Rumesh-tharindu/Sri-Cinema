@@ -39,14 +39,14 @@ function FirstPage(props) {
       <div className="section-1">
       <div className="header-wrapper">
         <div className="wrapper">
-          <span className="lebal"><i className="fas fa-video"></i>  ශ්‍රී Cinema</span>
+          <span className="lebal"><i className="fas fa-video"></i>  ශ්‍රී CINEMA</span>
           <span className="signLink"><Link to="/signin">Signin</Link></span>
         </div>
       </div>
       {/* //header */}
        <div className="email-content container">
          <div className="email-content-wrapper mt-5">
-        <h1 className="email-content-title"> You can watch free,<br />Try 7 Day free trail</h1>
+        <h1 className="email-content-title"> You can watch anything free<br />Try 24 hour free trail</h1>
         <form className="email-form" onSubmit={handleSubmit(onSubmit)}>
         <input className="email-input" name="email" type="text" placeholder="Enter Email" ref={register({required:true})} />
         <button className="btn-trail" > Free Trail   <i className="fas fa-chevron-right"></i> </button>
@@ -92,7 +92,7 @@ function FirstPage(props) {
       <div className="illustation-image">
        <div className="container">
          <div className="row">
-           <div className="col-md-6 p-5">
+           <div className="col-md-6 ">
              <img src={family} className="img-fluid" alt="illustartion-image"/>
            </div>
            <div className="col-md-6 p-5 mt-5">
@@ -106,9 +106,6 @@ function FirstPage(props) {
       <div className="content-mobile ">
         <div className="container">
         <div className="row">
-        <div className="col-md-5 p-5">
-          <img src={mobile}/>
-        </div>
         <div className="col-md-7 pt-5">
           <div className="mobile-description">
           <h1 className="mobile-title">You can watch from anywhere and anytime</h1>
@@ -119,6 +116,10 @@ function FirstPage(props) {
           </div>
           </div>
           </div>
+        <div className="col-md-5 p-5">
+          <img src={mobile}/>
+        </div>
+        
         </div>
         </div>
       </div>
