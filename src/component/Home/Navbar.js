@@ -1,20 +1,21 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Navbar() {
     return (
         
   <nav className="navbar  navbar-expand-lg navbar-light">
-  <a className="navbar-brand" href="#"><i className="fas fa-video mr-1"></i>  ශ්‍රී Cinema</a>
+  <Link className="navbar-brand" to='/'><i className="fas fa-video mr-1"></i>  ශ්‍රී Cinema</Link>
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span className="navbar-toggler-icon fa fa-bars"></span>
   </button>
   <div className="collapse navbar-collapse" id="navbarNav">
     <ul className="navbar-nav mr-5">
       <li className="nav-item">
-        <a className="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <Link to='./home'className="nav-link" >Home <span class="sr-only">(current)</span></Link>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="#">Movies</a>
+       <Link className="nav-link" to='/movie'>Movies</Link>
       </li>
       <li className="nav-item">
         <a className="nav-link" href="#">Tv Shows</a>

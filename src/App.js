@@ -5,6 +5,7 @@ import {BrowserRouter as Router,Switch,Route,Link} from 'react-router-dom'
 import Home from './component/Home/home'
 import FirstPage from './FirstPage';
 import SignUp from './component/SignUp'
+import Movie from './component/Home/Movie'
 import 'bootstrap/dist/css/bootstrap.min.css';
  
  
@@ -21,8 +22,8 @@ function App() {
        <Route exact path="/home">
        <Home />
        </Route > 
-       <Route  path="/signup" component={SignUp}>
-       </Route>
+       <Route  path="/signup" component={SignUp}> </Route>
+       <Route path='/movie' component={Movie}></Route>
      
 
     </Switch>
