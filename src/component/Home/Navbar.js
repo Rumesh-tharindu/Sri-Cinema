@@ -43,7 +43,9 @@ function Navbar() {
         <a className="nav-link" href="#"><i className="fas fa-bell"></i></a>
       </li>
       <li className="nav-item">
-        <a className="nav-link disabled" href="#">profile</a>
+        <div className="profile">
+           <span>R</span>
+        </div>
       </li>
     </ul>
   </div>

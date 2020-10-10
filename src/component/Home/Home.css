@@ -7,7 +7,7 @@
 
 nav{
     background-color:rgb(15 23 36);
-    border:1px solid rgb(15, 15, 15);
+    border-bottom:1px solid #555;
    
 }
 .navbar-light .navbar-nav .nav-link{
@@ -114,4 +114,16 @@ nav{
     right: 0;
     background-color: red;
     z-index: 1;
+}
+
+.profile {
+    width: 40px;
+    background-color: rgb(129, 9, 9);
+    height: 40px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    font-weight: bold;
+    border-radius: 100px;
 }
