@@ -12,7 +12,7 @@ function Navbar() {
   <div className="collapse navbar-collapse" id="navbarNav">
     <ul className="navbar-nav mr-5">
       <li className="nav-item">
-        <Link to='./home'className="nav-link" >Home <span class="sr-only">(current)</span></Link>
+        <Link to='./home'className="nav-link" >Home <span className="sr-only">(current)</span></Link>
       </li>
       <li className="nav-item">
        <Link className="nav-link" to='/movie'>Movies</Link>

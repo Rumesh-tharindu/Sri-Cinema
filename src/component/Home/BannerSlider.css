@@ -19,7 +19,7 @@
 .bannerSlider .owl-carousel .owl-nav .owl-next{
     font-size: 30px;
     color:#fff;
-    background-color:#1d2636;
+    background-color:#0c0912;
     padding: 10px 15px !important;
     position: absolute;
     top:40%;
@@ -27,7 +27,7 @@
     outline: none;
     opacity: .8;
     font-weight: bold;
-    border: 2px solid #1d2636;
+    border: 2px solid #0c0912;
 }
 .bannerSlider .owl-carousel .owl-nav .owl-prev{
     border-right: 2px solid #555;
@@ -103,6 +103,7 @@
       padding:5px 10px;
       text-transform: uppercase;
       margin-left: 20px;
+      box-shadow: 0 1px 2px 0 rgba(0,0,0,.7);
   }
   .banner-view .banner-info .add-cart i{
       color:#0f1724;

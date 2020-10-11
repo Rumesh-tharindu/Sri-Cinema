@@ -10,7 +10,7 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
            <div className="bannerSlider">
            <OwlCarousel items={1}  
           loop={true}  
-        nav={true}
+          nav={true}
           autoplay={true}
           responsiveClass={true}
           autoplayTimeout={5000}
@@ -20,7 +20,7 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
           stagePadding={200}
            >  
            <div className="banner-view" >
-               <img style={{height:'100%'}}   src="https://i.pinimg.com/originals/c0/76/8e/c0768ec92145ec5d0631bc2e7a035c1f.jpg" alt="one"/>
+               <img style={{height:'100%'}}   src="https://lh3.googleusercontent.com/proxy/TITkSOQIpS5CUz68jdFEtSwTNDKPddbbiORJ4bw1wE3YdbJQ2DOmv1gGTO0cSUDLElo__e-FcW5iFTnxwmRRHTf5hp36xhhC6yv5pS7RqA" alt="one"/>
                 <div className="banner-info">
                     <h3>Latest Movie Trailers</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, culpa!
@@ -36,7 +36,24 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
                 </div>
                 </div>  
            <div className="banner-view">
-               <img   src="https://english.mathrubhumi.com/polopoly_fs/1.4675470.1586324787!/image/image.jpg_gen/derivatives/landscape_894_577/image.jpg " alt="two"/>
+               <img   src="https://efusion1-img1.akamaized.net/57f40334ab0dde68d400ad26/video_image/5d18fd3be0dda95c3425f5ef/1561918779/original.jpg?1561918779" />
+               <div className="banner-info">
+                    <h3>Latest Movie Trailer</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, culpa!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, culpa!
+                    </p>
+                    <span className="play-icon">
+                        <i className="fa fa-play"></i>
+                    </span>
+                    <span className="add-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span className="add-cart-text">add to cart</span>
+                    </span>
+                   
+                </div>
+               </div>  
+               <div className="banner-view">
+               <img   src="https://vhx.imgix.net/vodlk1/assets/45183c26-1865-44c7-acd4-f3f13b6993d2-da19d485.jpg?auto=format%2Ccompress&fit=crop&h=360&q=70&w=640" alt="two"/>
                <div className="banner-info">
                     <h3>Latest Movie Trailer</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, culpa!

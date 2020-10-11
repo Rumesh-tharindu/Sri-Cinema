@@ -1,11 +1,15 @@
 import React from 'react'
 import NavBar from './Navbar'
+import MovieCards from './MovieCards'
 
 function Movie() {
+
     return (
+        
         <div>
             <NavBar />
-            <h1>Movie</h1>
+            <MovieCards />
+           
         </div>
     )
 }

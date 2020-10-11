@@ -3,7 +3,7 @@ import Navbar from './Navbar'
 import './Home.css'
 import BannerSlider from './BannerSlider'
 import PopularBanner from './PopularBanner'
-import NewRelease from './NewRelease'
+
 import MidSlider from './MidSlider'
 
 export default function home() {
@@ -11,8 +11,8 @@ export default function home() {
         <div>
            <Navbar />
            <BannerSlider/>
-           <PopularBanner />
-           <NewRelease />
+           <PopularBanner  />
+           
           <MidSlider />
         </div>
     )
