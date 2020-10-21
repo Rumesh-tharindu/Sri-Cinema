@@ -8,6 +8,7 @@ import appstore from './appstore.png'
 import ScrollUpButton from 'react-scroll-up-button'
 import {useForm} from 'react-hook-form'
 import family from './family.png'
+import logo from './component/Home/film-roll.png'
 
 
 import AccordianComponet from './component/AccordianComponet';
@@ -39,7 +40,7 @@ function FirstPage(props) {
       <div className="section-1">
       <div className="header-wrapper">
         <div className="wrapper">
-          <span className="lebal"><i className="fas fa-video"></i>  ශ්‍රී CINEMA</span>
+          <span className="lebal"><img style={{width:'35px0',height:'35px'}} src={logo} alt=""/>  ශ්‍රී CINEMA</span>
           <span className="signLink"><Link to="/signin">Signin</Link></span>
         </div>
       </div>
@@ -65,7 +66,7 @@ function FirstPage(props) {
       <div className="counter-content">
       <div className="container mt-2">
         <div className="row " >
-        <div className="col-lg-4">
+        <div className=" col-sm-4 col-md-4 col-lg-4">
           <div className="count-wrapper">
             {scrollP >160  ? <span className="counter"><CountUp  end={500}/>+</span> : "" }
            
@@ -73,13 +74,13 @@ function FirstPage(props) {
           </div>
          
         </div>
-        <div className="col-lg-4">
+        <div className="col-sm-4 col-md-4 col-lg-4">
         <div className="count-wrapper">
            {scrollP >160  ? <span className="counter"><CountUp  end={120}/>+</span> : "" }
             <span className="counter-title"><i className="fas fa-tv"></i> TV Show</span>
           </div>
         </div>
-        <div className="col-lg-4">
+        <div className="col-sm-4 col-md-4 col-lg-4">
         <div className="count-wrapper">
         {scrollP >160  ? <span className="counter"><CountUp  end={90}/>+</span> : "" }
             <span className="counter-title"><i className="fas fa-theater-masks"></i> Stage Drama</span>

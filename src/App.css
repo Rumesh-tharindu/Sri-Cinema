@@ -379,3 +379,39 @@ text-align: center;
   border:none;
 }
 
+/* responsive counter */
+@media(max-width:576px){
+  .count-wrapper .counter,.count-wrapper .counter span{
+    font-size: 25px;
+  }
+  .count-wrapper .counter-title i{
+    font-size: 20px;
+  }
+  .count-wrapper .counter-title{
+    font-size: 25px;
+  }
+}
+@media(min-width:576px){
+.count-wrapper .counter,.count-wrapper .counter span{
+  font-size: 25px;
+}
+.count-wrapper .counter-title i{
+  font-size: 20px;
+}
+.count-wrapper .counter-title{
+  font-size: 25px;
+}
+}
+@media(min-width:769px){
+  .count-wrapper .counter,.count-wrapper .counter span{
+    font-size: 70px;
+  }
+  .count-wrapper .counter-title i{
+    font-size: 40px;
+  }
+  .count-wrapper .counter-title{
+    font-size: 40px;
+  }
+  }
+
+

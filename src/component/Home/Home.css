@@ -116,14 +116,36 @@ nav{
     z-index: 1;
 }
 
-.profile {
-    width: 40px;
-    background-color: rgb(129, 9, 9);
-    height: 40px;
-    display: grid;
-    justify-content: center;
-    align-items: center;
+
+
+.navbar-toggler-icon{
+    background-image: none !important;
+}
+.navbar-toggler{
+    border-radius: 0 !important;
+    outline: none !important;
+}
+.navbar-brand a{
+ color:#fff;
+ font-weight: bold;
+}
+.navbar-left span{
+ color:#fff;
+ padding: 10px 10px;
+ margin-right: 10px;
+}
+.navbar-left .profile{
+    display: inline-block;
+}
+.navbar-left .profile span.user{
     color:#fff;
+    display: inline-block;
+    background-color: #555;
+    border-radius: 50%;
     font-weight: bold;
-    border-radius: 100px;
+    font-size: 20px;
+    line-height: .8;
+}
+.navbar-left{
+ display: flex;
 }

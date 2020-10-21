@@ -1,5 +1,5 @@
 import React from 'react'
-import NavBar from './Navbar'
+import Navigation from './Navigation'
 import MovieCards from './MovieCards'
 
 function Movie() {
@@ -7,7 +7,7 @@ function Movie() {
     return (
         
         <div>
-            <NavBar />
+            <Navigation />
             <MovieCards />
            
         </div>
