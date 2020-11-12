@@ -7,8 +7,9 @@ import FirstPage from './FirstPage';
 import SignUp from './component/SignUp'
 import Movie from './component/Home/Movie'
 import 'bootstrap/dist/css/bootstrap.min.css';
- 
- 
+import ValidateEmail from './component/ValidateEmail'
+
+
 
 function App() {
   return (
@@ -18,13 +19,14 @@ function App() {
         </Route>
        <Route exact path="/signin">
        <SignIn />
-       </Route > 
+       </Route >
        <Route exact path="/home">
        <Home />
-       </Route > 
-       <Route  path="/signup" component={SignUp}> </Route>
+       </Route >
+       <Route exact  path="/signup" component={SignUp} />
        <Route path='/movie' component={Movie}></Route>
-     
+       <Route path="/validate" component={ValidateEmail} />
+
 
     </Switch>
     </Router>

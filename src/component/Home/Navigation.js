@@ -7,7 +7,7 @@ function Navigation() {
     return (
         
       <Navbar expand="lg">
-        <div className="container-fluid">
+       
       <Navbar.Brand href="#home"><Link to='/'>
         <img className="mr-2" style={{width:'30px',height:'30px'}} src={logo} alt="" srcset=""/>
         ශ්‍රී  CINEMA</Link></Navbar.Brand>
@@ -37,7 +37,7 @@ function Navigation() {
         </span>
         </div>
       </div>
-      </div>
+    
     </Navbar>
         
     )

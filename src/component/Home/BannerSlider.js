@@ -18,6 +18,7 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
           autoplayHoverPause={true}
           margin={15}
           stagePadding={200}
+          
            >  
            <div className="banner-view" >
                <img style={{height:'100%'}}   src="https://vhx.imgix.net/vodlk1/assets/45183c26-1865-44c7-acd4-f3f13b6993d2-da19d485.jpg?auto=format%2Ccompress&fit=crop&h=360&q=70&w=640" alt="one"/>

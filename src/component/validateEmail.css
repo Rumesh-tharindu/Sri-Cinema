@@ -1,0 +1,29 @@
+.head-line{
+  width: 100%;
+}
+
+.head-line h1{
+  color:#fff;
+  margin-top: 30px;
+  text-align: center;
+  font-family: 'IBM Plex Sans', sans-serif;
+  letter-spacing: 1px;
+}
+.image-container{
+  width:100%;
+  display: flex;
+  justify-content: center;
+}
+.info-text{
+  max-width: 700px;
+}
+.info-text p{
+  color:#fff;
+  line-height: 1.5;
+  font-family: 'IBM Plex Sans', sans-serif;
+  text-align: center;
+}
+.info-text p span{
+  color:#555;
+  font-style: italic;
+}

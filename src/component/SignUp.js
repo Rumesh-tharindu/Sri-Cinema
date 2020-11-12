@@ -15,17 +15,20 @@ function SignUp(props) {
            method:'post',
            url:'http://localhost:5000/user/register',
            data:data
-           
+
        }).then(res=>{
            if(!res.data.status){
-            showMessge(res.data.message)
+             console.log(res)
+           if(res.data.message=="success"){
+            props.history.push('/validate')
            }
+         }
            else{
             props.history.push('/home')
            }
-           
+
        })
-     
+
    }
     return (
         <div>
@@ -36,16 +39,13 @@ function SignUp(props) {
                           <p className="message-text">{message}</p>
                       </div>
                   <div className="form-group">
-                      <label htmlFor="">Full name</label>
-                      <input 
-                      type="text" 
-                      name="fullname"
+                      <label htmlFor="">UserName </label>
+                      <input
+                      type="text"
+                      name="username"
                       ref={register({
                           required:'Enter Full Name here',
-                          pattern:{
-                              value:/^(([A-Za-z]+[\-\']?)*([A-Za-z]+)?\s)+([A-Za-z]+[\-\']?)*([A-Za-z]+)?$/,
-                              message:'Enter your full name'
-                          }
+
                       })}
                       className="form-control"/>
                       {errors.fullname && <span className="text-danger font-weight-bold">{errors.fullname.message}</span>}
@@ -53,10 +53,10 @@ function SignUp(props) {
                   <div className="form-group">
                       <label htmlFor="">E-mail</label>
                       <input
-                       defaultValue={props.location.state.email} 
+                       defaultValue={props.location.state.email}
                        type="text"
                         name="email"
-                        id="" 
+                        id=""
                        className="form-control"
                        ref={register({
                            required:'Enter email address',
@@ -70,7 +70,7 @@ function SignUp(props) {
                   </div>
                   <div className="form-group">
                       <label htmlFor="">Password</label>
-                      <input 
+                      <input
                       type="password"
                       name="password"
                       ref={register({
