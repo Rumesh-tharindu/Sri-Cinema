@@ -22,6 +22,9 @@ function SignUp(props) {
            if(res.data.message=="success"){
             props.history.push('/validate')
            }
+           else{
+               
+           }
          }
            else{
             props.history.push('/home')

@@ -345,6 +345,10 @@ text-align: center;
   border-radius: 0;
   background-color:rgb(29 38 54);
   border:none;
+  color:#ccc !important;
+}
+.signup-form input:focus{
+  background-color:rgb(29 38 54);
 }
 .signup-form button{
   border-radius: 0;
@@ -354,7 +358,9 @@ text-align: center;
 }
 .signup-form h3{
   font-weight: bold;
-  color:#000;
+  color:#fff;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 3px;
 }
 .signup-form label{
   margin-bottom:0 ;
