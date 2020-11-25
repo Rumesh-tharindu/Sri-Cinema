@@ -5,7 +5,7 @@ import axios from 'axios'
 
 function ConfirmEmail(props) {
  const confirmValidation=()=>{
- axios.get('http://localhost:5000/user/confirmEmail')
+ axios.get('https://cellke-backend.herokuapp.com/confirmEmail')
         .then(res=>{
             props.history.push('/home')
         })
