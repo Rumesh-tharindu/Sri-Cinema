@@ -371,8 +371,8 @@ text-align: center;
   text-align: center;
   padding: 5px;
 }
-.signup-form .message-body .message-text{
-  color:rgb(230, 6, 6);
+.signup-form  .message-text{
+  color:#CB4335 ;
   font-weight: 600;
   margin:0;
 }
@@ -384,7 +384,9 @@ text-align: center;
   background-color: #1d2636;
   border:none;
 }
-
+.wrapper .lebal {
+  letter-spacing: 2px;
+}
 /* responsive counter */
 @media(max-width:576px){
   .count-wrapper .counter,.count-wrapper .counter span{

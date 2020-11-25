@@ -14,7 +14,7 @@ const ValidateEmail =()=>{
         <div className="info-text container p-5">
          <p>
          We've sent you an email with a link to verify your account.please click on the verification link to finish your registration.
-          If you don't see it within an hour, please chack your spam folder for message <span>noreply@SriCinema.org</span>
+          If you don't see it within an hour, please chack your spam folder for message <span>noreply@cellke.org</span>
          </p>
         </div>
         </div>

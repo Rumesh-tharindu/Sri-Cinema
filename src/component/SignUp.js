@@ -13,17 +13,17 @@ function SignUp(props) {
    const onSubmit=(data)=>{
        axios({
            method:'post',
-           url:'http://localhost:5000/user/register',
+           url:'https://cellke-backend.herokuapp.com/user/register',
            data:data
 
        }).then(res=>{
            if(!res.data.status){
              console.log(res)
-           if(res.data.message=="success"){
+           if(res.data.response==true){
             props.history.push('/validate')
            }
            else{
-               
+               showMessge(res.data.message)
            }
          }
            else{
@@ -37,10 +37,8 @@ function SignUp(props) {
         <div>
            <div className="container ">
                <form  className="signup-form mx-auto px-5 p-3 mt-4" onSubmit={handleSubmit(onSubmit)}>
-                   <h3>SignUp for Sri Cinema</h3>
-                      <div className="message-body">
-                          <p className="message-text">{message}</p>
-                      </div>
+                   <h3>SignUp for CELLKE</h3>
+
                   <div className="form-group">
                       <label htmlFor="">UserName </label>
                       <input
@@ -70,6 +68,7 @@ function SignUp(props) {
                        })}
                        />
                        {errors.email && <span className="text-danger font-weight-bold">{errors.email.message}</span>}
+                       <p className="message-text">{message}</p>
                   </div>
                   <div className="form-group">
                       <label htmlFor="">Password</label>

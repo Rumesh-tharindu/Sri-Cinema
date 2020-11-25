@@ -8,6 +8,7 @@ import SignUp from './component/SignUp'
 import Movie from './component/Home/Movie'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ValidateEmail from './component/ValidateEmail'
+import ConfirmEmail from './component/ConfirmEmail'
 
 
 
@@ -26,6 +27,7 @@ function App() {
        <Route exact  path="/signup" component={SignUp} />
        <Route path='/movie' component={Movie}></Route>
        <Route path="/validate" component={ValidateEmail} />
+       <Route path="/confirm" component={ConfirmEmail} />
 
 
     </Switch>

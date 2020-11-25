@@ -40,7 +40,7 @@ function FirstPage(props) {
       <div className="section-1">
       <div className="header-wrapper">
         <div className="wrapper">
-          <span className="lebal"><img style={{width:'35px0',height:'35px'}} src={logo} alt=""/>  ශ්‍රී CINEMA</span>
+          <span className="lebal"><img style={{width:'35px0',height:'35px'}} src={logo} alt=""/>  CELLKE</span>
           <span className="signLink"><Link to="/signin">Signin</Link></span>
         </div>
       </div>
